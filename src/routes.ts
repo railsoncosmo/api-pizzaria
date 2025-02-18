@@ -30,4 +30,4 @@ router.get('/category', isAuthenticated, new ListCategoryController().handle)
 // router product
 router.post('/product', isAuthenticated, upload.single, new CreateProductController().handle)
 
-export { router }; 
+export { router };
