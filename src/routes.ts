@@ -28,6 +28,6 @@ router.post('/category', isAuthenticated, new CreateCategoryController().handle)
 router.get('/category', isAuthenticated, new ListCategoryController().handle)
 
 // router product
-router.post('/product', isAuthenticated, upload.single, new CreateProductController().handle)
+router.post('/product', isAuthenticated, upload.single("file"), new CreateProductController().handle)
 
-export { router }; 
+export { router };

@@ -5,7 +5,7 @@ class CreateProductController {
     async handle(req: Request, res: Response){
 
         const { name, price, description, category_id } = req.body;
-        const { originalname, filename } = req.file;
+        const { originalname, filename: banner } = req.file;
 
         if(!req.file){
             throw new Error('Error upload file')
@@ -17,7 +17,7 @@ class CreateProductController {
             name,
             price,
             description,
-            banner: '',
+            banner,
             category_id
         })
 
