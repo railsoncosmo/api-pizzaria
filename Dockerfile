@@ -9,4 +9,4 @@ RUN npm install
 
 CMD ["npm", "run", "start"]
 
-EXPOSE 3000
+EXPOSE 3333
