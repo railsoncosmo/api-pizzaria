@@ -31,6 +31,6 @@ app.use((error: Error, req: Request, res: Response, next: NextFunction) => {
     })
 })
 
-app.listen(3333, () => {
+app.listen(process.env.PORT, () => {
     console.log('Server started')
 });
